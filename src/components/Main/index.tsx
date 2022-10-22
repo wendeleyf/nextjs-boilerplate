@@ -1,15 +1,16 @@
 import * as S from './styles'
 
-const Main = () => (
+const Main = ({
+  title = 'Boilerplate',
+  description = 'Typescript, ReactJS, NextJS e StyledComponents!'
+}) => (
   <S.Wrapper>
     <S.Logo
       src="/img/logo.svg"
       alt="Logo do React e React Avançado escrito ao lado"
     />
-    <S.Title>Boilerplate</S.Title>
-    <S.Description>
-      Typescript, ReactJS, NextJS e StyledComponents!
-    </S.Description>
+    <S.Title>{title}</S.Title>
+    <S.Description>{description}</S.Description>
     <S.Illustration
       src="/img/hero-illustration.svg"
       alt="Desenvolvedor de frente para tela com código"
