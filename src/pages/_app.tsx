@@ -7,6 +7,7 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>React Avançado - BoilerPlate</title>
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
